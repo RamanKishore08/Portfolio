@@ -12,6 +12,15 @@
 body{
     background: #0f0a0a;
     height: 100vh;
+    
+}
+@keyframes scaleout{
+    0%{
+       scale: 0;
+    }
+    100%{
+     scale: 1;
+    }
 }
 html{
     font-size: 62.1%;
@@ -87,7 +96,7 @@ section{
     padding: 10rem 9% 2rem;
     min-height: 100vh;
 }
-.about,.education,.contact,.skills{
+.about,.education,.contact,.skills,.projects{
     overflow: hidden;
 }
 .home{
@@ -597,7 +606,7 @@ section.start-animation .skill-box2{
     color: #fff;
     padding: 20px;
     margin: 10px;
-    width: calc(50% - 20px);
+    width: calc(30% - 10px);
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -606,10 +615,12 @@ section.start-animation .skill-box2{
     box-shadow: 0 0 10px rgba(0,0,0,0.3); 
     overflow: hidden; 
     
+    
 }
 
 .project-box:nth-child(3n+1) {
     width: calc(30% - 20px);
+    
 }
 
 .project-box:hover {
@@ -669,23 +680,27 @@ section.start-animation .skill-box2{
 }
 
 .project-box .view-project:hover {
-    color: #ccc; /* Change color on hover */
+    color: #ccc; 
 }
 
 .projects {
-    background-color: #0f0a0a; /* Set the background color of the entire section */
-    color: #fff; /* Set the text color to white for better visibility */
+    background-color: #0f0a0a; 
+    color: #fff;
     padding: 20px;
+    animation:Right 1s ease forwards;
+    animation-delay: 1.2s;
+    
+    
+    
 }
 
 .projects .title {
-
     text-align: center;
     margin-bottom: 40px;
 }
 
 .projects .title span {
-    color: #f39c12; /* Accent color for the title */
+    color: #f39c12; 
 }
 
 .project-container {
@@ -696,18 +711,18 @@ section.start-animation .skill-box2{
 }
 
 .project-box {
-    background-color: #333; /* Match the project box background color to the section background */
+    background-color: #333; 
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 300px; /* Fixed width for consistency */
+    width: 300px; 
 }
 
 .project-box img {
-    width: 100%; /* Make the image take the full width of the project box */
-    height: 200px; /* Set a fixed height for the image */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
-    border-radius: 10px; /* Optional: match the border radius of the box */
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px; 
 }
 
 .project-box h3 {
@@ -731,6 +746,8 @@ section.start-animation .skill-box2{
     text-decoration: none; 
     color: #fff;
     font-size: 25px; 
+    animation:Right 1s ease forwards;
+    animation-delay: 1.2s;
 }
 
 .social-media-links .social-link:hover {
@@ -778,7 +795,7 @@ section.start-animation input:nth-child(2){
     border-radius: .8rem;
     gap: 2.5rem;
     margin: .7rem 0;
-    transition: .3s ease;
+    transition: 1.4s ease;
     opacity: 0;
     transform: translateY(100px);
     
@@ -821,16 +838,12 @@ section.start-animation .btn{
     0 0 .7rem #e7e7e7;
 }
 .contact-text {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
     text-align: justify;
-}
-
-
-@media screen and (max-width: 768px) {
-    .project-box {
-        width: 100%;
-    }
+    animation:Bottom 1s ease forwards;
+    animation-delay:1.4s;
+    
 }
 
 footer {
@@ -862,92 +875,9 @@ footer i {
     font-size: 2.4rem;
 }
 
-/* RESPONSIVE */
-@media(max-width:1200px){
-    html{
-        font-size: 55;
-    }
-}
-@media(max-width:991px){
-    .header{
-        padding: 2rem 9%;
-    }
-    section{
-        padding: 10rem 3% 2rem;
-    }
-    .contact{
-        min-height: auto;
-    }
-    footer{
-        padding: 2rem 3%;
-    }
-}
-@media(max-width:768px){
-    #menu{
-        display: block;
-    }
-    .navbar{
-        position: absolute;
-        left: 0;
-        top: 100%;
-        width: 100%;
-        padding: 1rem 3%;
-        background: #0f0a0a;
-        border-top: 1px solid rgba(255,255,255,.1);
-        border-bottom: .2rem solid rgba(255,255,255,.1);
-        display: none;
-    }
-    .navbar.active{
-        display: block;
-    }
-    .navbar a{
-        display: block;
-        margin: 3rem 0;
-        font-size: 2rem;
-    }
-    .home{
-        flex-direction: column-reverse;
-    }
-    .home .text-content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .home .text-content h1{
-        font-size: 4rem;
-    }
-    .home img{
-        width: 30vw;
-    }
-    .about{
-        flex-direction: column;
-    }
-    .about img{
-        width: 20rem;
-        height: 20rem;
-    }
-}
-@media(max-width:450px){
-    html{
-        font-size: 50%;
-    }
-    .input-box input{
-        width: 100%;
-    }
-}
-/* Projects Section */
-.projects, .contact {
-    opacity: 0; /* Initially hide the sections */
-    animation: fadeIn 1s ease forwards; /* Animation for opacity */
-    animation-delay: 5s; /* Delay the animation start */
-}
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+
+
+
+
+
