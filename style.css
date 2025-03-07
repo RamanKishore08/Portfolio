@@ -681,6 +681,12 @@ section.start-animation .skill-box2{
     justify-content: center;
 }
 
+.tech-logos i {
+    font-size: 50px;
+    
+}
+
+
 .project-box {
     color: #fff;
     padding: 20px;
@@ -694,6 +700,30 @@ section.start-animation .skill-box2{
     border-radius: 10px;
     text-align: center;
 }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+.social-icons a {
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+}
+
+.social-link i {
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+.fa-external-link-alt {
+    font-size: 24px; 
+    vertical-align: middle;
+}
+
+
+
 
 .project-box:hover {
     transform: translateY(-5px);
@@ -757,12 +787,20 @@ section.start-animation .skill-box2{
 .project-box .view-project:hover {
     color: #ccc;
 }
+section.start-animation .projects{
+    animation: top 1s ease forwards;
+    animation-delay: 1.2s;
+}
 
 .projects {
     background-color: #0f0a0a;
     color: #fff;
     padding: 20px;
+    animation: top 1s ease forwards;
+    animation-delay: 1.2s;
 }
+    
+
 
 .projects .title {
     text-align: center;
