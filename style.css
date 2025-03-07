@@ -679,6 +679,21 @@ section.start-animation .skill-box2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    transform: translateY(-100px);
+    opacity: 0;
+}
+section.start-animation .projects-container {
+    animation: top 1s ease forwards;
+}
+@keyframes top{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .tech-logos i {
@@ -689,7 +704,7 @@ section.start-animation .skill-box2{
 
 .project-box {
     color: #fff;
-    padding: 20px;
+    padding: 7px;
     margin: 10px;
     width: calc(33.333% - 20px); 
     box-sizing: border-box;
@@ -699,6 +714,21 @@ section.start-animation .skill-box2{
     background-color: #333; 
     border-radius: 10px;
     text-align: center;
+    transform: translateY(-100px);
+    opacity: 0;
+}
+section.start-animation .project-box  {
+    animation: top 1.5s ease forwards;
+}
+@keyframes top{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 .social-icons {
     display: flex;
@@ -739,7 +769,7 @@ section.start-animation .skill-box2{
 
 .project-box .project-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     position: absolute;
     top: 0;
@@ -787,10 +817,7 @@ section.start-animation .skill-box2{
 .project-box .view-project:hover {
     color: #ccc;
 }
-section.start-animation .projects{
-    animation: top 1s ease forwards;
-    animation-delay: 1.2s;
-}
+
 
 .projects {
     background-color: #0f0a0a;
@@ -798,6 +825,22 @@ section.start-animation .projects{
     padding: 20px;
     animation: top 1s ease forwards;
     animation-delay: 1.2s;
+    transform: translateY(-100px);
+    opacity: 0;
+}
+section.start-animation .projects {
+    animation: top 1.5s ease forwards;
+}
+@keyframes top{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
 }
     
 
@@ -825,102 +868,8 @@ section.start-animation .projects{
     border-radius: 10px;
 }
 
-/* My Works Section */
-.my-works {
-    background-color: #0f0a0a;
-    color: #fff;
-    padding: 20px;
-}
-
-.my-works .title {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.my-works .title span {
-    color: #f39c12;
-}
-.my-works p{
-    color: #ffffff;
-    font-size: 2.5rem;
-}
-
-.my-works ul {
-    list-style-type: none;
-    padding: 0;
-    font-size: 2rem;
-}
-
-.my-works ul li {
-    margin: 15px 0;
-    line-height: 1.8;
-}
-
-.my-works ul li strong {
-    font-weight: bold;
-    color: #f39c12;
-}
-
-.my-works ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.my-works ul li a:hover {
-    color: #8e97bd; 
-}
 
 
-.my-works-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.work-box {
-    color: #fff;
-    padding: 20px;
-    margin: 10px;
-    width: calc(33.333% - 20px);
-    box-sizing: border-box;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    background-color: #333;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.work-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
-}
-
-.work-box h3 {
-    font-size: 24px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-
-.work-box a {
-    color: #f39c12;
-    text-decoration: none;
-    font-size: 10px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.work-box a:hover {
-    color: #ccc;
-}
-
-@media screen and (max-width: 768px) {
-    .work-box {
-        width: 100%;
-    }
-}
 
 
 /* Social Media Icons */
@@ -928,6 +877,26 @@ section.start-animation .projects{
     text-decoration: none; 
     color: #fff;
     font-size: 25px; 
+    display: flex;
+    justify-content: center;
+    animation: top 1s ease forwards;
+    animation-delay: 1.2s;
+    transform: translateY(-100px);
+    opacity: 0;
+}
+section.start-animation .social-media-links  {
+    animation: top 1.5s ease forwards;
+}
+@keyframes top{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
 }
 
 .social-media-links .social-link:hover {
@@ -1005,13 +974,30 @@ textarea{
 .contact{
     padding: 20px;
     margin: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     border-radius: 10px;
-    
-    
+    animation: top 1s ease forwards;
+    animation-delay: 1.2s;
+    transform: translateY(-100px);
+    opacity: 0;
 }
+section.start-animation .contact {
+    animation: top 1.5s ease forwards;
+}
+@keyframes top{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+    
+    
 .contact .btn{
     margin-top: 2rem;
     cursor: pointer;
