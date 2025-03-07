@@ -971,29 +971,12 @@ textarea:valid{
 textarea{
     resize: none;
 }
-.contact{
+.contact {
     padding: 20px;
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     border-radius: 10px;
-    animation: top 1s ease forwards;
-    animation-delay: 1.2s;
-    transform: translateY(-100px);
-    opacity: 0;
-}
-section.start-animation .contact {
-    animation: top 1.5s ease forwards;
-}
-@keyframes top{
-    0%{
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0px);
-        opacity: 1;
-    }
 
 }
     
