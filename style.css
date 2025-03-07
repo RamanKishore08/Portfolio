@@ -612,6 +612,12 @@ section.start-animation .skill-box2{
 .bar-14{
     width: 90%;
 }
+.bar-15{
+    width: 88%;
+}
+.bar-16{
+    width: 85%;
+}
 .barc-1{
     width: 97%;
 }
@@ -706,7 +712,7 @@ section.start-animation .projects-container {
     color: #fff;
     padding: 7px;
     margin: 10px;
-    width: calc(33.333% - 20px); 
+    width: calc(31.333% - 20px); 
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -904,103 +910,7 @@ section.start-animation .social-media-links  {
 
 }
 
-/* contact section */
-section form{
-    max-width: 70rem;
-    text-align: center;
-    margin: 1rem auto;
-    margin-bottom: 3rem;
- 
-}
-.input-box{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-input:nth-child(1){
-    opacity: 0;
-    transform: translateX(-100px);
-}
-section.start-animation input:nth-child(1){
-    animation:Right 1s ease forwards;
-    animation-delay: 1.2s;
-}
-input:nth-child(2){
-    opacity: 0;
-    transform: translateX(100px);
-}
-section.start-animation input:nth-child(2){
-    animation:Left 1s ease forwards;
-    animation-delay: 1.2s;
-}
- input,textarea{
-    width: 100%;
-    padding: 1.5rem;
-    background:rgba(227, 224, 224, 0.1);
-    border: .2rem solid rgba(255,255,255,.3);
-    outline: none;
-    backdrop-filter: blur(10px);
-    filter: drop-shadow(0 0 100px #000000);
-    border-radius: .8rem;
-    gap: 2.5rem;
-    margin: .7rem 0;
-    transition: .3s ease;
-    opacity: 0;
-    transform: translateY(100px);
-    
-}
-section.start-animation textarea{
-    animation:Bottom 1s ease forwards;
-    animation-delay: 1.2s;
-}
-input::placeholder{
-    font-size: 1.5rem;
-    letter-spacing: .02rem;
-}
-.input-box input{
-    width: 49%;
-}
-input:focus,
-input:valid{
-    border: .2rem solid #e7e7e7;
-}
-textarea:focus,
-textarea:valid{
-    border: .2rem solid #ffffff;
-}
-textarea{
-    resize: none;
-}
-.contact {
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    border-radius: 10px;
 
-}
-    
-    
-.contact .btn{
-    margin-top: 2rem;
-    cursor: pointer;
-    filter: none;
-    border: .2rem solid rgba(0, 0, 0, 0.3);
-}
-section.start-animation .btn{
-    animation:Bottom 1s ease forwards;
-    animation-delay: 1.4s;
-}
-.contact .btn:hover{
-    background: #010000;
-    box-shadow: 0 0 .3rem #e7e7e7,
-    0 0 .7rem #e7e7e7;
-}
-.contact-text {
-    font-size: 2.5rem;
-    line-height: 1.5;
-    text-align: justify;
-}
 
 
 
